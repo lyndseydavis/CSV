@@ -70,6 +70,8 @@ plt.title(dv_title)
 # format date to be at an angle
 fig.autofmt_xdate()
 
-plt.suptitle("Daily High and Low Temps for Sitka and Death Valley 2018", fontsize=18)
+plt.suptitle(
+    f"Temperature comparison between {sitka_title} and {dv_title}", fontsize=18
+)
 
 plt.show()
