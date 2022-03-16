@@ -8,17 +8,13 @@ open_dv = open("death_valley_2018_simple.csv", "r")
 sitka = csv.reader(open_sitka, delimiter=",")
 dv = csv.reader(open_dv, delimiter=",")
 
-header_row1 = next(sitka)
-header_row2 = next(dv)
+header_row = next(sitka)
 # print(type(header_row))
 
 # create index variables
-tmin1 = header_row1.index("TMIN")
-tmax1 = header_row1.index("TMAX")
-tmin2 = header_row2.index("TMIN")
-tmax2 = header_row2.index("TMAX")
-title1 = header_row1.index("NAME")
-title2 = header_row2.index("NAME")
+tmin1 = tmin2 = header_row.index("TMIN")
+tmax1 = tmax2 = header_row.index("TMAX")
+title1 = title2 = header_row.index("NAME")
 
 # create lists for highs, lows, and dates
 highs1, highs2, dates1, dates2, lows1, lows2 = [], [], [], [], [], []
