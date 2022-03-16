@@ -27,7 +27,7 @@ for temp in sitka:
         low = int(temp[tmin1])
         sitka_title = temp[title1]
     except ValueError:
-        print(f"Missing data for {date}")
+        print(f"Missing Sitka data for {date}")
     else:
         highs1.append(high)
         dates1.append(date)
@@ -41,7 +41,7 @@ for temp in dv:
         low = int(temp[tmin2])
         dv_title = temp[title2]
     except ValueError:
-        print(f"Missing data for {date}")
+        print(f"Missing Death Valley data for {date}")
     else:
         highs2.append(high)
         dates2.append(date)
